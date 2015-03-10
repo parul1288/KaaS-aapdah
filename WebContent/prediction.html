@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1120,user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Prediction</title>
+
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+
+	<link rel="stylesheet" href="css/prediction.css" />
+	<link rel="stylesheet" href="css/skel-noscript.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="prediction.js"></script>
+
+<style type="text/css">
+#report_Form {
+	display: none;
+}
+</style>
+
+</head>
+<body>
+	<div id="wrapper">
+	
+		<div id="main">
+		
+			<div id="predict">
+				<form id="createAccountForm">
+					<h2>Predict Crime</h2>
+					<p>
+						<label for="city">Location: </label> <select id="city"
+							name="city" class="basic">
+							<option value="-1">Select City</option>
+							<option value="San Jose">San Jose</option>
+							<option value="Santa Clara">Santa Clara</option>
+							<option value="Menlo Park">Menlo Park</option>
+							<option value="San Francisco">San Francisco</option>
+							<option value="Sunnyvale">Sunnyvale</option>
+							<option value="Palo Alto">Palo Alto</option>
+							<option value="Mountain View">Mountain View</option>
+						</select>
+					</p><br>
+
+					<span id="loading"></span> <input type="submit" value="Predict"
+						id="submitButton" />
+				</form>
+			</div>
+
+
+			<div id="predictor">
+				<h2>Crimes Prediction</h2>
+				<table id="predictTable">
+					<thead>
+						<tr>
+							<th>Crime Type</th>
+							<th>Prediction</th>
+						</tr>
+					</thead>
+
+					<tbody>
+					</tbody>
+				</table>
+			</div>	
+
+		</div>
+		
+		
+		<div class="footer" id="footer">
+			<div class="left">
+				<p>
+					This is <strong>Aapdah</strong>, a disaster data handling
+					application <br><br/> using Knowledge as a Service Framework
+				</p>
+			</div>
+
+			<div class="right">
+				<ul class="contact">
+					<li><a href="#" class="fa fa-home" title="Home"><span>Home</span></a></li>
+
+					<li><a href="prediction.html" class="fa fa-forward"
+						title="Predict Crime"><span>Predict Crime</span></a></li>
+
+					<li><a href="crowdReportandTweets.html" class="fa fa-twitter"
+						title="Tweets"><span>Tweets</span></a></li>
+
+					<li><a href="Maps.html" class="fa fa-map-marker"
+						title="View Map"><span>Map</span></a></li>
+
+					<li><a href="reportcrime.html" class="fa fa-eye"
+						title="Report a crime"><span>Report Crime</span></a></li>
+					
+					<li><a href="Login.html" class="fa fa-user"
+						title="SignUp/SignIn"><span>Login</span></a></li>
+					</ul><br>
+						
+				<div id="copyright">
+					Copyright &copy;<a href="http://aapdah.net/"> Aapdah</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

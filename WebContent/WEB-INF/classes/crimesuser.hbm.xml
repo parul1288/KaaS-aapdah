@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+	<class name="beans.CrimeUserDataEntity" table="crimesuserdata">
+
+
+		<id name="identifier">
+			<column name="identifier" not-null="true"></column>
+			<generator class="identity"></generator>
+		</id>
+
+		<property name="crimeType" />
+		<property name="dateValue" />
+		<property name="timeValue" />
+		<property name="address" />
+		<property name="city" />
+		<property name="description" />
+
+	</class>
+</hibernate-mapping>

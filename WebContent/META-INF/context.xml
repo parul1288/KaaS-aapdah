@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+
+  <Resource name='jdbc/crimedb' auth='Container' type='javax.sql.DataSource'
+            factory='org.apache.tomcat.jdbc.pool.DataSourceFactory'
+            maxActive='80' maxIdle='15' maxWait='10000'
+            testOnBorrow='true'
+            validationQuery='/* ping */'
+            validationInterval='30000'
+            username='aapdahdkp'
+            password='aapdahdkp'
+            driverClassName='com.microsoft.sqlserver.jdbc.SQLServerDriver'
+            url='jdbc:sqlserver://aapdah.cvxaobkqahyj.us-west-2.rds.amazonaws.com:1433' />
+
+</Context>

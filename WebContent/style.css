@@ -1,0 +1,136 @@
+
+
+body {
+	background-color: #C0C0C0;
+	font-size: 87.5%; /*Base font size is 14px*/
+	font-family: 'Comic sans';
+	line-height: 1.5;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+
+figure {
+	float: left;	
+}
+
+figcaption {
+	color: #000000;
+}
+
+a {
+	text-decoration: none;	
+}
+
+a: link, a:visited {
+	color: #CF5C3F;
+}
+
+a:hover, a:active {
+	color: #FFF;
+}
+
+.body {
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+}
+
+.mainHeader img {
+	display: block;
+	width: 30%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+}
+
+.mainHeader nav {
+	background-color: #EB4242;
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainHeader nav ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainHeader nav ul li {
+	float: left;
+	display: inline;
+	padding: 10px;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	color: #FFF;
+	display: inline;
+	padding: 10px 25px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, mainHeader nav .active a:visited {
+	background-color: #000000;
+	text-shadow: none;
+	
+}
+
+.mainHeader nav ul li a {
+	 border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainContent img {
+	width: 100px;
+	height: 100px;
+}
+
+.mainContent {
+	 line-height: 25px;
+	 border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content {
+	width: 70%;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.top-slider {
+	width: 25%;
+	float: left;
+}
+
+.mainFooter {
+	width: 100%;
+	float: left;
+	border-radius: 3px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #666;
+	margin: 2% 0;
+}
+
+.mainFooter p {
+	width: 92%;
+	margin: 2% auto;
+}
+
+@media only screen and (min-width: 150 px) and (max-width: 600px)
+{
+	
+	.body {
+		width: 90%;
+		font-size: 95%;
+	}	
+}
+

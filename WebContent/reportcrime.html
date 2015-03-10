@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Report Crime</title>
+
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="reportcrime.js"></script>
+
+	<link rel="stylesheet" href="css/reportcrime.css" />
+	<link rel="stylesheet" href="css/skel-noscript.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+	
+		<div id="main">
+
+			<div id="reportCrime">
+				<form id="crowdDataForm">
+				
+					<h2>Report a Crime</h2>
+					<table id="reportCrimeTable">
+						<tr>
+							<td><label for="crimeType">Crime Type:</label></td>
+							<td><select id="crimeType"
+							name="crimeType" class="basic" required="required"
+							title="Crime Type[required]">
+							<option value="-1">Select Crime Type</option>
+							<option value="Assault">Assault</option>
+							<option value="Assault With Deadly Weapon">Assault With
+								Deadly Weapon</option>
+							<option value="Breaking & Entering">Breaking & Entering</option>
+							<option value="Homicide">Homicide</option>
+							<option value="Sexual Offense">Sexual Offense</option>
+							<option value="Robbery">Robbery</option>
+							<option value="Theft">Theft</option>
+							<option value="Theft from Vehicle">Theft from Vehicle</option>
+							<option value="Theft of Vehicle">Theft of Vehicle</option>
+							<option value="Vehicle Recovery">Vehicle Recovery</option>
+						</select></td>
+						</tr>
+
+						<tr>
+						<td><label for="date">Date of Crime: </label></td>
+						<td><input type="text"
+							name="date" id="date" title="Date [required]" required="required"
+							placeholder="Date" /></td>
+						</tr>
+					
+						<tr>
+						<td><label for="time">Time of Crime: </label></td> 
+						<td><input type="text"
+							name="time" id="time" title="Time [required]" required="required"
+							placeholder="Time" /></td>
+						</tr>
+					
+						<tr>
+						<td><label for="address">Address: </label></td>
+						<td><input type="text"
+							name="address" id="address" title="Address [required]"
+							required="required" placeholder="Address" /></td>
+						</tr>
+						
+						<tr>
+						<td><label for="city">City: </label></td>
+						<td><select id="city" name="city"
+							class="basic" required="required" title="City [required]">
+							<option value="-1">Select City</option>
+							<option value="San Jose">San Jose</option>
+							<option value="Santa Clara">Santa Clara</option>
+							<option value="Menlo Park">Menlo Park</option>
+							<option value="San Francisco">San Francisco</option>
+							<option value="Sunnyvale">Sunnyvale</option>
+							<option value="Palo Alto">Palo Alto</option>
+							<option value="San Mateo">San Mateo</option>
+							<option value="Mountain View">Mountain View</option>
+							<option value="Los Altos">Los Altos</option>
+							<option value="Los Angeles">Los Angeles</option>
+							<option value="Burlingame">Burlingame</option>
+							<option value="Alexander City">Alexander City</option>
+						</select></td>
+						</tr>
+					
+						<tr>
+						<td>
+						<label for="description">Description: </label> </td>
+						<td><input type="text"
+							name="description" id="description" title="Description"
+							placeholder="Description" /></td>
+							</tr>
+				
+				</table>
+				<input type="submit" value="Report Crime" id="submitButton"/>
+				</form>
+			</div>
+		
+		</div>
+		
+		<div class="footer" id="footer">
+			<div class="left">
+				<p>
+					This is <strong>Aapdah</strong>, a disaster data handling
+					application <br><br/> using Knowledge as a Service Framework
+				</p>
+			</div>
+
+			<div class="right">
+				<ul class="contact">
+					<li><a href="#" class="fa fa-home" title="Home"><span>Home</span></a></li>
+
+					<li><a href="prediction.html" class="fa fa-forward"
+						title="Predict Crime"><span>Predict Crime</span></a></li>
+
+					<li><a href="crowdReportandTweets.html" class="fa fa-twitter"
+						title="Tweets"><span>Tweets</span></a></li>
+
+					<li><a href="Maps.html" class="fa fa-map-marker"
+						title="View Map"><span>Map</span></a></li>
+
+					<li><a href="reportcrime.html" class="fa fa-eye"
+						title="Report a crime"><span>Report Crime</span></a></li>
+					
+					<li><a href="Login.html" class="fa fa-user"
+						title="SignUp/SignIn"><span>Login</span></a></li>
+				</ul><br>
+					
+				<div id="copyright">
+					Copyright &copy;<a href="http://aapdah.net/"> Aapdah</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Aapdah - Disaster Data Handling Application</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale-1.0">
+<style type="text/css">
+#report_Form {
+	display: none;
+}
+</style>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="loginSwap.js"></script>
+<script type="text/javascript" src="RetrieveSqlData.js"></script>
+<script type="text/javascript" src="RealTimeTweets.js"></script>
+<script type="text/javascript">
+	
+</script>
+</head>
+<body class="body">
+	<div id="homeDiv">
+		<div>
+			<header class="mainHeader">
+				<img src="img/logo.jpg">
+
+				<nav>
+					<ul>
+						<li ><a href="homepage.html">Home</a></li>
+						<li><a href="#" id="">About</a></li>
+						<li><a href="#" id="predict">Prediction</a></li>
+						<li><a href="" id="report">Report</a></li>
+						<li><a href="Maps.html" id="maps">Aapdah Maps</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="mainContent">
+			<div class="content">
+				<div class="top-row-crimes">
+					<figure class="theft">
+						<a href="" id="theftCrime" class="crimeTypeImage"> 
+							<img src="img/theft.jpg" alt="Theft">
+							<figcaption>
+								<p class="crime-title" style="word-wrap: break-word;">Theft
+									Reports</p>
+							</figcaption>
+						</a>
+					</figure>
+
+					<figure class="robbery">
+						<a href="robberycrimereport.com"> <img src="img/robbery.jpg"
+							alt="Robbery Crimes">
+							<figcaption>
+								<p class="crime-title" style="word-wrap: break-word;">Robbery
+									Reports</p>
+							</figcaption>
+						</a>
+					</figure>
+
+					<figure class="property">
+						<a href="propertycrimereport.com"> <img src="img/property.jpg"
+							alt="Property Crimes">
+							<figcaption>
+								<p class="crime-title" style="word-wrap: break-word;">Property
+									Crime Reports</p>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+
+				<div class="middle-row-crimes">
+					<figure class="assault">
+						<a href="assualtcrimereport.com"> <img src="img/assault.jpg"
+							alt="Assualt Crimes">
+							<figcaption>
+								<p class="crime-title" style="word-wrap: break-word;">Assualt
+									Reports</p>
+							</figcaption>
+						</a>
+					</figure>
+
+					<figure class="abuse">
+						<a href="abusecrimereport.com"> <img src="img/abuse.jpg"
+							alt="Abuse Crimes">
+							<figcaption>
+								<p class="crime-title" style="word-wrap: break-word;">Abuse
+									Reports</p>
+							</figcaption>
+						</a>
+					</figure>
+
+					<figure class="drug">
+						<a href="drugcrimereport.com"> <img src="img/drug.jpg"
+							alt="Drug Crimes">
+							<figcaption>
+								<p class="crime-title" style="word-wrap: break-word;">Drug
+									Abuse Reports</p>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+
+				<div class="bottom-row-crimes">
+					<figure class="breaking">
+						<a href="breakingcrimereport.com"> <img src="img/breaking.jpg"
+							alt="Breaking and Entering Crimes">
+							<figcaption>
+								<p class="crime-title" style="word-wrap: break-word;">Breaking
+									Reports</p>
+							</figcaption>
+						</a>
+					</figure>
+
+					<figure class="homicide">
+						<a href="homiMap.htmlcidecrimereport.com"> <img
+							src="img/homicide.jpg" alt="Homicide Crimes">
+							<figcaption>
+								<p class="crime-title" style="word-wrap: break-word;">Homicide
+									Reports</p>
+							</figcaption>
+						</a>
+					</figure>
+
+					<figure class="vehicle">
+						<a href="vehiclecrimereport.com"> <img
+							src="img/vehicle-theft.jpg" alt="Vehicle-Theft Crimes">
+							<figcaption>
+								<p class="crime-title" style="word-wrap: break-word;">Vehicle
+									Reports</p>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<aside class="top-sidebar">
+			<article>
+				<h2 align="center">Trending Tweets</h2>
+				<p></p>
+				<div id='testDiv'>
+					<table id="marqueeTable" style="width: 300px; height: 400px">
+						<thead>
+						<tbody id="tweets" align="center">
+						</tbody>
+					</table>
+				</div>
+			</article>
+		</aside>
+
+		<footer class="mainFooter">
+			<p>
+				Copyright &copy; <a href="#" title="Aapdah">aapdah.com</a>
+			</p>
+		</footer>
+		<div id="report_Form" align="center" title="Report">
+			<form id="crowdDataForm" style="">
+				<fieldset>
+					<p>
+						<label for="crimeType">Crime Type: </label> <select id="crimeType"
+							name="crimeType" class="basic" style="width: 250px">
+							<option value="-1">Select Crime Type</option>
+							<option value="Assault">Assault</option>
+							<option value="Assault With Deadly Weapon">Assault With
+								Deadly Weapon</option>
+							<option value="Breaking & Entering">Breaking & Entering</option>
+							<option value="Homicide">Homicide</option>
+							<option value="Sexual Offense">Sexual Offense</option>
+							<option value="Robbery">Robbery</option>
+							<option value="Theft">Theft</option>
+							<option value="Theft from Vehicle">Theft from Vehicle</option>
+							<option value="Theft of Vehicle">Theft of Vehicle</option>
+							<option value="Vehicle Recovery">Vehicle Recovery</option>
+						</select>
+					</p>
+
+					<p>
+						<label for="date">Date of crime: </label> <input type="text"
+							name="date" id="date" value="" />
+					</p>
+
+					<p>
+						<label for="time">Time of crime: </label> <input type="text"
+							name="time" id="time" value="" />
+					</p>
+
+					<p>
+						<label for="address">Address: </label> <input type="text"
+							name="address" id="address" value="">
+					</p>
+
+					<p>
+						<label for="city">City: </label> <select id="city" name="city"
+							class="basic" style="width: 250px">
+							<option value="-1">Select City</option>
+							<option value="San Jose">San Jose</option>
+							<option value="Santa Clara">Santa Clara</option>
+							<option value="Menlo Park">Menlo Park</option>
+							<option value="San Francisco">San Francisco</option>
+							<option value="Sunnyvale">Sunnyvale</option>
+							<option value="Palo Alto">Palo Alto</option>
+							<option value="San Mateo">San Mateo</option>
+							<option value="Mountain View">Mountain View</option>
+							<option value="Los Altos">Los Altos</option>
+							<option value="Los Angeles">Los Angeles</option>
+							<option value="Burlingame">Burlingame</option>
+							<option value="Alexander City">Alexander City</option>
+						</select>
+					</p>
+
+					<p>
+						<label for="description">Description: </label> <input type="text"
+							name="description" id="description" value="" />
+					</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

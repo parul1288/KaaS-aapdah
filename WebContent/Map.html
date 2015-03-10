@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Crimes map</title>
+<script
+	src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script>
+
+<style>
+#report_Form {
+	display: none;
+}
+
+#map {
+	height: 530px;
+	border: 1px solid #333;
+	margin-top: 0.6em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="stylelogin.css" type="text/css" />
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="Map.js"></script>
+
+
+
+</head>
+<body>
+
+	<div>
+		<div>
+			<header class="mainHeader">
+				<img src="img/logo.jpg">
+
+				<nav>
+					<ul>
+						<li class="active"><a href="homepage.html">Home</a></li>
+						<li><a href="#" id="">About</a></li>
+						<li><a href="#" id="predict">Prediction</a></li>
+						<li><a href="#" id="report">Report</a></li>
+						<li><a href="#" id="Map.html">Aapdah Maps</a></li>
+						<li><a href="Login.html">Login</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div>
+				<p>Please select a city</p>
+			</div>
+			<div>
+				<form id="formMaps" name="formMaps">
+					<label for="city">City: </label> <select id="city" name="city"
+						class="basic" style="width: 250px">
+						<option value="-1">Select City</option>
+						<option value="San Jose">San Jose</option>
+						<option value="Santa Clara">Santa Clara</option>
+						<option value="Menlo Park">Menlo Park</option>
+						<option value="San Francisco">San Francisco</option>
+						<option value="Sunnyvale">Sunnyvale</option>
+						<option value="Palo Alto">Palo Alto</option>
+						<option value="San Mateo">San Mateo</option>
+						<option value="Mountain View">Mountain View</option>
+						<option value="Los Altos">Los Altos</option>
+						<option value="Los Angeles">Los Angeles</option>
+						<option value="Burlingame">Burlingame</option>
+						<option value="Alexander City">Alexander City</option>
+					</select> <input type="submit" value="Submit" id="submitButton"
+						name="submitButton" />
+				</form>
+			</div>
+			<div id="map"></div>
+			<div id="text"></div>
+		</div>
+
+		<div id="report_Form" align="center" title="Report">
+			<form id="crowdDataForm" style="">
+				<fieldset>
+					<p>
+						<label for="crimeType">Crime Type: </label> <select id="crimeType"
+							name="crimeType" class="basic" style="width: 250px">
+							<option value="-1">Select Crime Type</option>
+							<option value="Assault">Assault</option>
+							<option value="Assault With Deadly Weapon">Assault With
+								Deadly Weapon</option>
+							<option value="Breaking & Entering">Breaking & Entering</option>
+							<option value="Homicide">Homicide</option>
+							<option value="Sexual Offense">Sexual Offense</option>
+							<option value="Robbery">Robbery</option>
+							<option value="Theft">Theft</option>
+							<option value="Theft from Vehicle">Theft from Vehicle</option>
+							<option value="Theft of Vehicle">Theft of Vehicle</option>
+							<option value="Vehicle Recovery">Vehicle Recovery</option>
+						</select>
+					</p>
+
+					<p>
+						<label for="date">Date of crime: </label> <input type="text"
+							name="date" id="date" value="" />
+					</p>
+
+					<p>
+						<label for="time">Time of crime: </label> <input type="text"
+							name="time" id="time" value="" />
+					</p>
+
+					<p>
+						<label for="address">Address: </label> <input type="text"
+							name="address" id="address" value="">
+					</p>
+
+					<p>
+						<label for="city">City: </label> <select id="city" name="city"
+							class="basic" style="width: 250px">
+							<option value="-1">Select City</option>
+							<option value="San Jose">San Jose</option>
+							<option value="Santa Clara">Santa Clara</option>
+							<option value="Menlo Park">Menlo Park</option>
+							<option value="San Francisco">San Francisco</option>
+							<option value="Sunnyvale">Sunnyvale</option>
+							<option value="Palo Alto">Palo Alto</option>
+							<option value="San Mateo">San Mateo</option>
+							<option value="Mountain View">Mountain View</option>
+							<option value="Los Altos">Los Altos</option>
+							<option value="Los Angeles">Los Angeles</option>
+							<option value="Burlingame">Burlingame</option>
+							<option value="Alexander City">Alexander City</option>
+						</select>
+					</p>
+
+					<p>
+						<label for="description">Description: </label> <input type="text"
+							name="description" id="description" value="" />
+					</p>
+				</fieldset>
+			</form>
+		</div>
+
+
+	</div>
+</body>
+</html>
+
+

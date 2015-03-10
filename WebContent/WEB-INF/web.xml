@@ -1,0 +1,117 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee  
+   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<!-- AutoCompleteCrimeTypeServlet -->
+	<servlet>
+		<servlet-name>AutoCompleteCrimeTypeServlet</servlet-name>
+		<servlet-class>servlets.AutoCompleteCrimeTypeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AutoCompleteCrimeTypeServlet</servlet-name>
+		<url-pattern>/AutoCompleteCrimeTypeServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- AutoCompleteCitiesServlet -->
+	<servlet>
+		<servlet-name>AutoCompleteCitiesServlet</servlet-name>
+		<servlet-class>servlets.AutoCompleteCitiesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AutoCompleteCitiesServlet</servlet-name>
+		<url-pattern>/AutoCompleteCitiesServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- RetrieveSqlDataServlet -->
+	<servlet>
+		<servlet-name>RetrieveSqlDataServlet</servlet-name>
+		<servlet-class>servlets.RetrieveSqlDataServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RetrieveSqlDataServlet</servlet-name>
+		<url-pattern>/RetrieveSqlDataServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- CrowdInputDataServlet -->
+	<servlet>
+		<servlet-name>CrowdInputDataServlet</servlet-name>
+		<servlet-class>servlets.CrowdInputDataServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CrowdInputDataServlet</servlet-name>
+		<url-pattern>/CrowdInputDataServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- MapAddressRetrieveServlet -->
+	<servlet>
+		<servlet-name>MapAddressRetrieveServlet</servlet-name>
+		<servlet-class>servlets.MapAddressRetrieveServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MapAddressRetrieveServlet</servlet-name>
+		<url-pattern>/MapAddressRetrieveServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- UserProfileSaveServlet -->
+	<servlet>
+		<servlet-name>UserProfileSaveServlet</servlet-name>
+		<servlet-class>servlets.UserProfileSaveServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserProfileSaveServlet</servlet-name>
+		<url-pattern>/UserProfileSaveServlet</url-pattern>
+	</servlet-mapping>	
+	
+	<!-- CrowdsourcingDataRetrievalServlet -->
+	<servlet>
+		<servlet-name>CrowdsourcingDataRetrievalServlet</servlet-name>
+		<servlet-class>servlets.CrowdsourcingDataRetrievalServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CrowdsourcingDataRetrievalServlet</servlet-name>
+		<url-pattern>/CrowdsourcingDataRetrievalServlet</url-pattern>
+	</servlet-mapping>	
+	
+	<!-- RetrieveRealTimeTweetsServlet -->
+	<servlet>
+		<servlet-name>RetrieveRealTimeTweetsServlet</servlet-name>
+		<servlet-class>servlets.RetrieveRealTimeTweetsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RetrieveRealTimeTweetsServlet</servlet-name>
+		<url-pattern>/RetrieveRealTimeTweetsServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- ValidateLoginServlet -->
+	<servlet>
+		<servlet-name>ValidateLoginServlet</servlet-name>
+		<servlet-class>servlets.ValidateLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ValidateLoginServlet</servlet-name>
+		<url-pattern>/ValidateLoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- PredictorServlet -->
+	<servlet>
+		<servlet-name>PredictorServlet</servlet-name>
+		<servlet-class>servlets.PredictorServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PredictorServlet</servlet-name>
+		<url-pattern>/PredictorServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>

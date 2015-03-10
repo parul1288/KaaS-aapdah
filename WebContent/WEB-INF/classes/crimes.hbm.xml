@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+	<class name="beans.CrimeDataEntity" table="crimes">
+
+
+		<id name="identifier">
+			<column name="identifier" not-null="true"></column>
+		</id>
+
+		<property name="crimeType" />
+		<property name="dateValue" />
+		<property name="timeValue" />
+		<property name="address" />
+		<property name="agency" />
+
+	</class>
+</hibernate-mapping>

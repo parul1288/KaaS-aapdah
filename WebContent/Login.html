@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="stylelogin.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="loginSwap.js"></script>
+<script type="text/javascript" src="loginandregister.js"></script>
+
+	<link rel="stylesheet" href="css/stylelogin.css" />
+	<link rel="stylesheet" href="css/skel-noscript.css" />
+	<link rel="stylesheet" href="css/style.css" />
+<style type="text/css">
+#report_Form {
+	display: none;
+}
+</style>
+
+</head>
+<body>
+	<div id="wrapper">
+		
+		<div id="main">
+	
+				<div id="login">
+					<h2>Log in</h2>
+
+					<form id="loginForm">
+						<p id="req-field-desc">
+							<span class="required">*</span> indicates a required field
+						</p>
+						
+						<label for="email">Email: <span class="required">*</span></label>
+						<input type="email" id="email" name="email" value=""
+							placeholder="username@gmail.com" required="required"
+							autofocus /> 
+						
+						<label for="password">Password: <span class="required">*</span></label> 
+						<input type="password" id="password"
+							name="password" value="" placeholder="******" required="required" />
+						
+						<span id="loading"></span> 
+						<input type="submit" value="Sign in" id="submitButton" />
+						
+						<p class="change_link">
+							Not a member yet ? <a href="#toregister" class="to_register"
+								id="toregister">Join us</a>
+						</p>
+
+					</form>
+				</div>
+
+				<div id="register">
+					<h2>Join Aapdah</h2>	
+					<form id="createAccountForm">
+					
+						<p>
+							<label for="firstName">First Name: </label>
+							<input id="firstName"
+								type="text" name="firstName" title="First Name [required]"
+								required="required" placeholder="First Name">
+						</p>
+
+						<p>
+							<label for="lastName">Last Name: </label>
+							<input id="lastName"
+								type="text" name="lastName" title="Last Name [required]"
+								required="required" placeholder="Last Name">
+						</p>
+
+						<p>
+							<label for="city">City: </label>
+							<select id="city" name="city" class="basic">
+								<option value="-1">Select City</option>
+								<option value="San Jose">San Jose</option>
+								<option value="Santa Clara">Santa Clara</option>
+								<option value="Menlo Park">Menlo Park</option>
+								<option value="San Francisco">San Francisco</option>
+								<option value="Sunnyvale">Sunnyvale</option>
+								<option value="Palo Alto">Palo Alto</option>
+								<option value="Mountain View">Mountain View</option>
+							</select>
+						</p>
+
+						<p>
+							<label for="state">State: </label>
+							<input id="state" type="text"
+								name="state" title="State [required]" required="required"
+								placeholder="State">
+						</p>
+
+						<p>
+							<label for="emailregister">Email Id: </label>
+							<input
+								id="emailregister" type="email" name="emailregister"
+								title="Email [required]" required="required">
+						</p>
+
+						<p>
+							<label for="passwordregister">Password: </label>
+							<input
+								id="passwordregister" type="password" name="passwordregister"
+								title="Password [required]" required="required">
+						</p>
+
+						<p>
+							<label for="confirmpassword">Confirm Password: </label>
+							<input
+								id="confirmPassword" type="password" name="confirmPassword"
+								title="Confirm Password [required]" required="required">
+						</p>
+						
+						<span id="loading"></span> <input type="submit"
+							value="Join Aapdah" id="submitButton" />
+
+						<p class="change_link">
+							Already a member ? <a href="#tologin" class="to_register"
+								id="tologin"> Go on and log in </a>
+						</p>
+					</form>
+				</div>
+		</div>
+		
+		<div class="footer" id="footer">
+			<div class="left">
+				<p>
+					This is <strong>Aapdah</strong>, a disaster data handling
+					application <br><br/> using Knowledge as a Service Framework
+				</p>
+			</div>
+
+			<div class="right">
+				<ul class="contact">
+					<li><a href="#" class="fa fa-home" title="Home"><span>Home</span></a></li>
+
+					<li><a href="prediction.html" class="fa fa-forward"
+						title="Predict Crime"><span>Predict Crime</span></a></li>
+
+					<li><a href="crowdReportandTweets.html" class="fa fa-twitter"
+						title="Tweets"><span>Tweets</span></a></li>
+
+					<li><a href="Maps.html" class="fa fa-map-marker"
+						title="View Map"><span>Map</span></a></li>
+
+					<li><a href="reportcrime.html" class="fa fa-eye"
+						title="Report a crime"><span>Report Crime</span></a></li>
+					
+					<li><a href="Login.html" class="fa fa-user"
+						title="SignUp/SignIn"><span>Login</span></a></li>
+					</ul><br>
+						
+				<div id="copyright">
+					Copyright &copy;<a href="http://aapdah.net/"> Aapdah</a>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+</body>
+</html>

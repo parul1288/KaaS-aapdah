@@ -1,0 +1,213 @@
+body {
+	background: url('../images/bg.jpg');
+	background-size: cover;
+}
+
+#login {
+	width: 465px;
+	padding: 20px;
+	margin: 50px auto;
+	border: 6px solid #8FB5C1;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	position: relative;
+	display: block;
+}
+
+#login h2 {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0
+		rgba(0, 0, 0, .5);
+	text-transform: uppercase;
+	text-align: center;
+	color: #666;
+	margin: 0 0 30px 0;
+	letter-spacing: 4px;
+	font: normal 26px/1 Verdana, Helvetica;
+	position: relative;
+}
+
+#login input,#login label {
+	font-size: 15px;
+	margin-bottom: 2px;
+}
+
+#login input {
+	width: 450px;
+	border: 1px solid #CEE1E8;
+	margin-bottom: 20px;
+	padding: 4px;
+}
+
+#login input:focus {
+	border: 1px solid #AFCDD8;
+	background-color: #EBF2F4;
+}
+
+#login label {
+	display: block;
+}
+
+#login .required {
+	font-weight: bold;
+	color: #F00;
+}
+
+#login #submitButton {
+	width: 100px;
+	background-color: #333;
+	color: #FFF;
+	border: none;
+	display: block;
+	float: right;
+	margin-bottom: 0px;
+	margin-right: 6px;
+	background-color: #8FB5C1;
+	-moz-border-radius: 8px;
+}
+
+#login #submitButton:hover {
+	background-color: #A6CFDD;
+}
+
+#login #submitButton:active {
+	position: relative;
+	top: 1px;
+}
+
+#login #loading {
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/loading.gif);
+	display: block;
+	position: absolute;
+	right: 130px;
+	bottom: 16px;
+	display: none;
+}
+
+#req-field-desc {
+	font-style: italic;
+}
+
+input:required {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Normalize placeholder styles */
+
+/* chrome, safari */
+::-webkit-input-placeholder {
+	color: #CCC;
+	font-style: italic;
+}
+
+/* mozilla */
+input:-moz-placeholder {
+	color: #CCC;
+	font-style: italic;
+}
+
+/* ie (faux placeholder) */
+input.placeholder-text {
+	color: #CCC;
+	font-style: italic;
+}
+
+#register {
+	background-color: #F2F7F9;
+	width: 465px;
+	padding: 20px;
+	margin: 50px auto;
+	border: 6px solid #8FB5C1;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	position: relative;
+	display: none;
+}
+
+#register h2 {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0
+		rgba(0, 0, 0, .5);
+	text-transform: uppercase;
+	text-align: center;
+	color: #666;
+	margin: 0 0 30px 0;
+	letter-spacing: 4px;
+	font: normal 26px/1 Verdana, Helvetica;
+	position: relative;
+}
+
+#register input,#register label,#select {
+	font-size: 15px;
+	margin-bottom: 2px;
+}
+
+#register input {
+	width: 450px;
+	border: 1px solid #CEE1E8;
+	margin-bottom: 20px;
+	padding: 4px;
+}
+
+#register input:focus {
+	border: 1px solid #AFCDD8;
+	background-color: #EBF2F4;
+}
+
+#register label {
+	display: block;
+}
+
+#register .required {
+	font-weight: bold;
+	color: #F00;
+}
+
+#register #submitButton {
+	width: 100px;
+	background-color: #333;
+	color: #FFF;
+	border: none;
+	display: block;
+	float: right;
+	margin-bottom: 0px;
+	margin-right: 6px;
+	background-color: #8FB5C1;
+	-moz-border-radius: 8px;
+}
+
+#register #submitButton:hover {
+	background-color: #A6CFDD;
+}
+
+#register #submitButton:active {
+	position: relative;
+	top: 1px;
+}
+
+#register #loading {
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/loading.gif);
+	display: block;
+	position: absolute;
+	right: 130px;
+	bottom: 16px;
+	display: none;
+}
+
+div.close {
+	background: url("../img/closeimage.jpg") no-repeat scroll 0 0
+		transparent;
+	cursor: pointer;
+	height: 30px;
+	position: absolute;
+	right: -27px;
+	top: -24px;
+	width: 30px;
+}

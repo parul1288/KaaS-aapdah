@@ -1,0 +1,231 @@
+#predict {
+	width: 465px;
+	padding: 20px;
+	margin: 80px auto;
+	border: 6px solid #FFFFFF;
+/*	border: 6px solid #8FB5C1;*/
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	position: relative;
+	display: block;
+	background-color:#505050;
+}
+
+#predict h2 {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0
+		rgba(0, 0, 0, .5);
+	text-transform: uppercase;
+	text-align: center;
+	color: #F0F0F0;
+	margin: 0 0 30px 0;
+	letter-spacing: 4px;
+	/*font: normal 26px/1 Verdana, Helvetica;*/
+	position: relative;
+}
+
+#predict select{
+	margin-left: 20px;
+}
+
+#predict input,#predict label {
+	font-size: 15px;
+	width: 100%;
+	color: #F0F0F0;
+}
+
+#predict input:focus {
+	border: 1px solid #AFCDD8;
+	background-color: #EBF2F4;
+}
+
+predict .required {
+	font-weight: bold;
+	color: #F00;
+}
+
+#predict #submitButton {
+	width: 100px;
+	background-color: #333;
+	color: #F0F0F0;
+	border: none;
+	display: block;
+	float: right;
+	margin-bottom: 0px;
+	margin-right: 6px;
+	background-color: #A0A0A0;
+	-moz-border-radius: 8px;
+}
+
+#predict #submitButton:hover {
+	background-color: #A6CFDD;
+}
+
+#predict #submitButton:active {
+	position: relative;
+	top: 1px;
+}
+
+#predict #loading {
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/loading.gif);
+	display: block;
+	position: absolute;
+	right: 130px;
+	bottom: 16px;
+	display: none;
+}
+
+#predictor {
+	width: 465px;
+	padding: 20px;
+	margin: 80px auto;
+	border: 6px solid #FFFFFF;
+/*	border: 6px solid #8FB5C1;*/
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	position: relative;
+	display: block;
+	background-color:#505050;
+}
+
+#predictor h2 {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0
+		rgba(0, 0, 0, .5);
+	text-transform: uppercase;
+	text-align: center;
+	color: #F0F0F0;
+	margin: 0 0 30px 0;
+	letter-spacing: 4px;
+	/*font: normal 26px/1 Verdana, Helvetica;*/
+	position: relative;
+}
+
+#predictor table thead{
+	align: center;
+}
+
+#predictor table th{
+	padding:12px;
+	color: #F0F0F0;
+}
+
+#predictor table td{
+	padding:12px;
+	color: #F0F0F0;
+}
+ 
+/*
+	Parallelism 1.1 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	html
+	{
+		height: 100%;
+	}
+
+	body
+	{
+		padding: 0;
+		font-size: 12pt;
+		line-height: 1.75em;
+		height: 100%;
+		min-height: 450px;
+		min-width: 1000px;
+	}
+
+		body:before
+		{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75));
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75));
+			background: -o-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75));
+			background: -ms-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75));
+			background: linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75));
+		}
+
+	ul.contact
+	{
+	}
+	
+		ul.contact li
+		{
+			margin-left: 1em;
+		}
+
+/*********************************************************************************/
+/* Wrapper                                                                       */
+/*********************************************************************************/
+
+	#wrapper
+	{
+		height: 100%;
+		overflow: hidden;
+		-webkit-transition: -webkit-filter 0.25s ease-in-out;
+	}
+	
+		#wrapper.overlayed
+		{
+			-webkit-filter: blur(3px);
+		}
+		
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		width: 100%;
+		position: absolute;
+	}
+
+
+ /*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+	}
+	
+		#footer h2
+		{
+			font-size: 2.25em;
+			margin: 0 0 1em 0;
+		}
+		
+		#footer .left
+		{
+			padding: 2em;
+			text-align: left;
+			
+		}
+		
+		#footer .right
+		{
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 2em;
+			text-align: right;
+
+		}
+		

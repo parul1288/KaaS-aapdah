@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+       "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- Database connection settings -->
+		<property name="connection.driver.class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+		<property name="connection.url">jdbc:sqlserver://aapdah.cvxaobkqahyj.us-west-2.rds.amazonaws.com:1433;
+			databaseName=crimedb</property>
+		<property name="connection.username">aapdahdkp</property>
+		<property name="connection.password">aapdahdkp</property>
+
+
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">10</property>
+
+		<!-- SQL dialect -->
+
+		<property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property> 
+
+		<!-- Disable second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">false</property>
+
+		<property name="current_session_context_class">thread</property>
+		<!-- <property name="hibernate.current_session_context_class">org.hibernate.context.ThreadLocalâ€Œâ€‹SessionContext</property> -->
+
+		<property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+		<!-- Drop and re-create the database schema on startup -->
+		<!--<property name="hbm2dll.auto">create-drop</property> Â  -->
+
+
+		<!-- Mapping files -->
+		<mapping resource="crimes.hbm.xml" />
+		<mapping resource="crimesuser.hbm.xml" />
+		<mapping resource="userdata.hbm.xml" />
+
+	</session-factory>
+</hibernate-configuration>
